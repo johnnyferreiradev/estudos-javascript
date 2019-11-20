@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Q7</title>
+</head>
+<body>
+  
+  <script>
+    var ageInYears = parseInt(prompt('Quantos anos você tem?'));
+    var ageInMonths = parseInt(prompt(`${ageInYears} anos e quantos mêses?`));
+    var ageInDays = parseInt(
+      prompt(`${ageInYears} anos ${ageInMonths} meses e quantos dias?`)
+    );
+
+    ageOnlyInDays = ageInYears * 365 + ageInMonths * 30 + ageInDays;
+    
+    console.log(`Você ja possui ${ageOnlyInDays} dias de vida!`);
+  </script>
+</body>
+</html>

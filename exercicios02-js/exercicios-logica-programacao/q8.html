@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Q8</title>
+</head>
+<body>
+  
+  <script>
+    var numberOfVoters = parseInt(prompt('Insira o total de eleitores: '));
+    var whiteVotes = parseInt(prompt('Insira o total de votos brancos: '));
+    var nullVotes = parseInt(prompt('Insira o total de votos nulos: '));
+    var validVotes = numberOfVoters - whiteVotes - nullVotes;
+
+    const percentageOfWhiteVotes = whiteVotes * 100/numberOfVoters;
+    const percentageOfNullVotes = nullVotes * 100/numberOfVoters;
+    const percentageOfValidVotes = validVotes * 100/numberOfVoters;
+
+    console.log(`Total de votos = ${numberOfVoters}`);
+    console.log(`Votos brancos (%) = ${percentageOfWhiteVotes}%`);
+    console.log(`Votos nulos (%) = ${percentageOfNullVotes}%`);
+    console.log(`Votos válidos (%) = ${percentageOfValidVotes}%`);
+  </script>
+</body>
+</html>
